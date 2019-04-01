@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train-Scheduler</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script src="assets/javascript/firebase.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</head>
+
+<body>
+
+    <header class="jumbotron text-center">
+        <h1>Train-Scheduler</h1>
+    </header>
+
+    <table class="table table-hover container">
+        <thead>
+            <tr>
+                <th scope="col">Train Name</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Frequency (min)</th>
+                <th scope="col">Next Arrival</th>
+                <th scope="col">Minutes Away</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--dynamically display info-->
+            <tr>
+                <th scope="row">Polar Express</th>
+                <td>North Pole</td>
+                <td>30</td>
+                <td>12:30</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="train-name">Train Name</label>
+                <input type="input" class="form-control" id="train-name-input" placeholder="Polar Express">
+            </div>
+            <div class="form-group">
+                <label for="destination-input">Destination</label>
+                <input type="input" class="form-control" id="destination-input" placeholder="Phoenix, Arizona">
+            </div>
+            <div class="form-group">
+                <label for="first-train-time-input">First Train Time</label>
+                <input type="input" class="form-control" id="first-train-time-input" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="frequency-input">Frequency (min)</label>
+                <input type="input" class="form-control" id="frequency-input" placeholder="">
+            </div>
+            <div>
+                <button class="btn btn-primary" id="submit-form-btn">Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
