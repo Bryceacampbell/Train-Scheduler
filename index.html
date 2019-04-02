@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
     <script src="assets/javascript/firebase.js"></script>
     <script src="assets/javascript/app.js"></script>
 </head>
@@ -33,14 +34,7 @@
             </tr>
         </thead>
         <tbody>
-            <!--dynamically display info-->
-            <tr>
-                <th scope="row">Polar Express</th>
-                <td>North Pole</td>
-                <td>30</td>
-                <td>12:30</td>
-                <td>30</td>
-            </tr>
+            <!--dynamically display train info here-->
         </tbody>
     </table>
 
@@ -55,12 +49,12 @@
                 <input type="input" class="form-control" id="destination-input" placeholder="Phoenix, Arizona">
             </div>
             <div class="form-group">
-                <label for="first-train-time-input">First Train Time</label>
-                <input type="input" class="form-control" id="first-train-time-input" placeholder="">
+                <label for="first-train-time-input">First Train Time (HH:mm - military time)</label>
+                <input type="input" class="form-control" id="first-train-time-input" placeholder="1230">
             </div>
             <div class="form-group">
                 <label for="frequency-input">Frequency (min)</label>
-                <input type="input" class="form-control" id="frequency-input" placeholder="">
+                <input type="input" class="form-control" id="frequency-input" placeholder="15">
             </div>
             <div>
                 <button class="btn btn-primary" id="submit-form-btn">Submit</button>
