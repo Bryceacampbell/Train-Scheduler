@@ -1,3 +1,22 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
 .container {
     border: solid 1px #777777;
+}
+header {
+    background: #468499 !important;
+    color: #ffffff;
+} 
+thead {
+    background: #468499 !important;
+    color: #ffffff;
+}
+form {
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.btn {
+    background: #468499;
+    color: #ffffff;
 }
